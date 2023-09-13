@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
+    <title>ClimaAtual</title>
+    <!--Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis"
+    />
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/1982da27ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="bloco">
+        <div class="titulo-bloco">
+          <img class="logo" draggable="false" src="./imgs/icon.png" alt="Imagem de ClimaAtual">
+          <h1 class="titulo">Clima<span class="cor-atual">Atual</span></h1>
+        </div>
+        <header>
+        <span class="material-symbols-outlined">[icone_local]</span>
+        <p class="local">Clima em <b>[cidade]</b></p>
+      </header>
+      <div class="info-bloco">
+        <div class="linha">
+          <div class="item">
+            <p class="padrao campo">Temperatura atual</p>
+            <p class="padrao valor">[temperatura_atual] °C</p>
+          </div>
+          <div class="item">
+            <p class="padrao campo">Temperatura mínima</p>
+            <p class="padrao valor"><i class="fas fa-arrow-down"></i> [temperatura_min] °C</p>
+          </div>
+          <div class="item">
+            <p class="padrao campo">Umidade</p>
+            <p class="padrao valor">[umidade] %</p>
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item especial">
+            <p class="padrao campo">Sensação térmica</p>
+            <p class="padrao valor">[sensacao_termica] °C</p>
+          </div>
+          <div class="item">
+            <p class="padrao campo">Temperatura máxima</p>
+            <p class="padrao valor"><i class="fas fa-arrow-up"></i> [temperatura_max] °C</p>
+          </div>
+          <div class="item">
+            <p class="padrao campo">Vento</p>
+            <p class="padrao valor">[vento] KM/H</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <p class="padrao campo">Condição</p>
+        <p class="padrao valor">[condicao]</p>
+      </div>
+      <footer>
+        <a href="https://www.github.com"><i class="fab fa-github ico-footer"></i></a>
+      </footer>
+    </div>
+    <p class="open">Dados obtidos de <a href="https://openweathermap.org"><b>OpenWeather</b>.</p>
+  </body>
+</html>
