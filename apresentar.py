@@ -11,8 +11,10 @@ def apresentarDados(dados, cidade, auto):
         conteudo = arquivo_entrada.read()
     if auto:
         conteudo = conteudo.replace('[icone_local]', 'location_searching')
+        conteudo = conteudo.replace('[mensagem_icone]', '🟩 Detecção automática ativada')
     else:
         conteudo = conteudo.replace('[icone_local]', 'location_disabled')
+        conteudo = conteudo.replace('[mensagem_icone]', '🟥 Detecção automática desativada')
     conteudo = conteudo.replace('[cidade]', cidade)
     conteudo = conteudo.replace('[temperatura_atual]', str(dados["main"]["temp"]))
     conteudo = conteudo.replace('[sensacao_termica]', str(dados["main"]["feels_like"]))

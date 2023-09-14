@@ -90,8 +90,6 @@ def main():
     parametro_entrada = None
     if len(sys.argv) > 1:
         parametro_entrada = sys.argv[1]
-    else:
-        parametro_entrada = None
     
     if parametro_entrada == "-e":
         gravarInfo()
@@ -118,5 +116,6 @@ def main():
                 json.dump(dados, arq_meta)
 
         requisicaoDados(valor_chave, cidade, auto, parametro_entrada)
+
 
 main()

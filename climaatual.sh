@@ -9,6 +9,9 @@ function desinstalar() {
 if [ -z "$1" ]; then
     python3 ~/.ClimaAtual/executar.py
 else
+    if [[ $1 == "-s" ]]; then
+        python3 ~/.ClimaAtual/executar.py -s
+    fi
     if [[ $1 == "-d" ]]; then
         echo "Você deseja confirmar a desinstalação? (S/N)"
         read des
@@ -18,9 +21,8 @@ else
         if [[ $des == "n" || $des == "N" ]]; then
             echo "Operação cancelada."
         fi
-    elif [[ $1 == "-D" ]]; then
+    fi
+    if [[ $1 == "-D" ]]; then
         desinstalar
-    else
-        python3 ~/.ClimaAtual/executar.py $1
     fi
 fi
