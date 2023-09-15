@@ -26,11 +26,19 @@ Para utilizar o programa execute o comando **climaatual** seguido do parâmetro 
 
 > $ **climaatual -s**
 
+<div align="center">
+    <img width="650" src="https://i.imgur.com/wBEivNa.png">
+</div>
+
 #### Modo Comum
 
 Para utilizar o programa execute o comando **climaatual**:
 
 > $ **climaatual**
+
+<div align="center">
+    <img width="650" src="https://i.imgur.com/JCZWaCf.png">
+</div>
 
 ### Desinstalar ➜
 
