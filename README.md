@@ -54,7 +54,6 @@ Estrutura utilizada:
 │	    │   ├── index.html
 │	    │   ├── raw.html
 │	    │   ├── style.css
-│	    │   ├── raw.html
 │	    │   └── imgs/
 │	    │       └── icon.png
 │	    ├── executar.py
