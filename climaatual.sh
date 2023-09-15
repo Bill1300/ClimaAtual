@@ -20,11 +20,11 @@ else
             desinstalar
         fi
         if [[ $des == "n" || $des == "N" ]]; then
-            echo "🟧 Operação cancelada."
+            echo "🟥 Operação cancelada."
         fi
     elif [[ $1 == "-D" ]]; then #desinstalarSemConfirmacao
         desinstalar
     else #parametroDesconhecido
-        echo "🟧 Parâmetro desconhecido."
+        echo "🟥 Parâmetro desconhecido."
     fi
 fi

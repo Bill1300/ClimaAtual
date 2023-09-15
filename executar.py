@@ -32,10 +32,10 @@ def requisicaoDados(valor_chave, cidade, auto, parametro_entrada):
                 json.dump(dados, arq_dados)
             apresentarDados(dados, cidade, auto, parametro_entrada)
         else:
-            print("Erro na solicitação.")
+            print("🟥 Erro na solicitação.")
 
     except (requests.ConnectionError, requests.Timeout) as exception: 
-        print("Erro de conexão.") 
+        print("🟥 Erro de conexão.") 
 
 
 def gravarInfo():
@@ -44,10 +44,10 @@ def gravarInfo():
         print(
             "Para a requisição de informações é necessário o cadastro na plataforma OpenWeather (https://home.openweathermap.org/api_keys) para ter uma chave de acesso."
         )
-        chave = str(input("Insira a chave de API ➜ "))
+        chave = str(input("🟧 Insira a chave de API ➜ "))
 
     cidade = str(
-        input("Insira o nome da cidade ( vazio para detecção automática ) ➜ ")
+        input("🟧 Insira o nome da cidade ( vazio para detecção automática ) ➜ ")
     ).capitalize()
     if cidade == "":
         cidade = autoLocal()
@@ -116,6 +116,5 @@ def main():
                 json.dump(dados, arq_meta)
 
         requisicaoDados(valor_chave, cidade, auto, parametro_entrada)
-
 
 main()

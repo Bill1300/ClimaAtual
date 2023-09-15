@@ -49,7 +49,7 @@ Estrutura utilizada:
 
 ```markdown
 ├── home/
-│	└── .ClimaAtual/
+│   └── .ClimaAtual/
 │	    ├── pagina/
 │	    │   ├── index.html
 │	    │   ├── raw.html
