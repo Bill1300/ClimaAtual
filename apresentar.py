@@ -93,12 +93,13 @@ def apresentarDadosSimples(dados, cidade, auto):
     else:
         titulo = "Clima em " + colored(cidade, attrs=["bold"]) + " ➜"
     
+    vento_velocidade, vento_direcao, _ = tratarVento(dados["wind"]["speed"],dados["wind"]["deg"])
+    
     print(titulo)
     print("Temperatura ➜ {} °C   (\U0001F53C Máx. {} °C   \U0001F53D Min. {} °C)".format(dados["main"]["temp"], dados["main"]["temp_min"], dados["main"]["temp_max"]))
     print("Sensação térmica ➜ {} °C".format(dados["main"]["feels_like"]))
     print(f'Umidade ➜ {dados["main"]["humidity"]} %')
-    vento = round((dados["wind"]["speed"] * 3.6), 2)
-    print(f'Vento ➜ {vento} Km/h')
+    print(f'Vento ➜ {vento_velocidade} Km/h ({vento_direcao})')
     print(f'Condição ➜ {dados["weather"][0]["description"].capitalize()}.')
 
 
